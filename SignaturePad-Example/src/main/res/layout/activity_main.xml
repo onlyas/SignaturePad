@@ -1,28 +1,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F8FF"
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/signature_pad_container"
-        android:layout_width="fill_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <com.github.gcacace.signaturepad.views.SignaturePad
             android:id="@+id/signature_pad"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" />
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#fff" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/buttons_container"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFAF0"
-        android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:paddingTop="16dp">
+        android:paddingTop="10dp">
 
         <Button
             android:id="@+id/clear_button"
