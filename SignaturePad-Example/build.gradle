@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+
+  defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 121
+        versionName "1.2.1"
+    }
+
+    signingConfigs { release }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation project(":signature-pad")
+    implementation 'com.android.support:appcompat-v7:27.0.1'
+}

@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+
+}
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        consumerProguardFiles 'proguard-rules-consumer.pro'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
